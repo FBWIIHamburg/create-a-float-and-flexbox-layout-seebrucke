@@ -1,0 +1,47 @@
+
+.containerEx{
+    display: flex;
+height: 100vh;
+    background-color: aqua;
+}
+.containerEx>div:nth-child(1){
+    flex:1;
+    background-color: bisque;
+}
+body{
+    margin:0;
+}
+
+.containerChild{
+    display:flex;
+    flex:9;
+    flex-wrap: wrap;
+    background-color:white;
+    height: 100vh;
+}
+    
+.containerChild>div:nth-child(1){
+    flex:100%;
+    height: 10vh;
+    background-color: rgb(13, 7, 41);
+}
+#content{
+    flex:80%;
+    /*here we adjust the proportional height*/
+    height: 80vh;
+    /*the text is very big and it will overflow , therefore we need schrollbar we can also do it without scroll bar
+    just we should forget to define a definite height for div */
+    overflow-y: scroll;
+    
+    background-color: rgb(112, 18, 18);
+}
+.containerChild>div:nth-child(3){
+    flex:20%;
+    /* height: 80vh; */
+    background-color: rgb(23, 170, 10);
+}
+.containerChild>div:nth-child(4){
+    flex:100%;
+    height:10vh;
+    background-color: rgb(69, 48, 163);
+}
